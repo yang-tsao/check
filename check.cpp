@@ -3,8 +3,14 @@
 using namespace std;
 char name[256]="a+b",s[256];
 double RT=1.0;
-int main()
+int main(int argc,char **args)
 {
+	if(argc>1)
+		sscanf(args[1],"%s",name);
+	else {
+		cout<<"Input Problem Name.\n";
+		scanf("%s",name);
+	}
 	for(int t=1; t<=200; t++)
 	{
 		system("cls");
